@@ -1,25 +1,15 @@
-# README
+# AICTE LITE Pupilfirst
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## WD201 Todo Manager
 
-Things you may want to cover:
+> Level 5 target
 
-* Ruby version
+- create users table code can be found [here](https://github.com/py563/AICTE_LITE_Pupilfirst_WD201/blob/main/L4-ActiveRecord/create_users_table.rb)
 
-* System dependencies
+- create todo table can be found [here](https://github.com/py563/AICTE_LITE_Pupilfirst_WD201/blob/main/L4-ActiveRecord/create_todos_table.rb)
 
-* Configuration
+## Steps to run the project
 
-* Database creation
+- Install and verify Ruby, Rails, `pg` gem on your laptop
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# AICTE_LITE_Pupilfirst_WD201_Todo_Manager /n/n Level 5 target
+- Clone the git repo and `rails server` to run code
