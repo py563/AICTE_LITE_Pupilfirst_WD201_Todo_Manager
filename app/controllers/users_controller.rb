@@ -34,9 +34,12 @@ class UsersController < ApplicationController
     password = params[:password]
     user = User.find_by(email: email, password: password)
     response_text = "Wrong Email or Password"
-    if user.present?
-      response_text = "Hey Welcome #{user.to_pleasant_string}"
-    end
-    render plain: response_text
+
+    # if user.present?
+    #  response_text = "Hey Welcome #{user.to_pleasant_string}"
+    # end
+    # render plain: response_text
+
+    render plain: user.present?
   end
 end
