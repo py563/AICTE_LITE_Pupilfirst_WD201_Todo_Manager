@@ -96,20 +96,17 @@ body {
   letter-spacing: 0.1px;
 }
 
+.TodoItem-dueDate {
+  font-size: 10px;
+  color: #00143b;
+  margin-left: 10px;
+}
+
 .TodoItem-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid #bfb8cc;
   border-radius: 4px;
-}
-
-.TodoItem-overduelabel {
-  font-family: Fira Code, sans-serif;
-  font-size: 10px;
-  color: #c53030;
-  letter-spacing: 0.09px;
-  margin-left: 5px;
-  margin-top: 4px;
 }
 
 .TodoItem-text {
