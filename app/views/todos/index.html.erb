@@ -3,7 +3,7 @@
     <h1 class="TodoPage-title">My Todo list</h1>
     <%= form_with(url: "/todos", method: "post", class: "AddTodo") do %>
       <%= text_field_tag "todo_text", nil, placeholder: "Whats Next?", class: "AddTodo-text" %>
-      <%= date_field :due_date, nil, class: "AddTodo-date" %>
+      <%= date_field_tag "due_date", nil, class: "AddTodo-date" %>
       <%= submit_tag "Add", class: "AddTodo-button" %>
     <% end %>
     <%= render partial: "todo-section", locals: {
