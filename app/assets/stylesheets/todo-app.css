@@ -113,6 +113,10 @@ body {
   margin-top: 3px;
 }
 
+.TodoItem-completedText {
+  text-decoration: line-through;
+}
+
 .TodoItem-container:hover {
   background-color: #f1edf7;
 }
