@@ -5,12 +5,6 @@ class UsersController < ApplicationController
     render "users/new"
   end
 
-  def show
-    id = params[:id]
-    user = User.find(id)
-    render plain: user.to_pleasant_string
-  end
-
   def create
     User.create!(
       first_name: params[:first_name],
