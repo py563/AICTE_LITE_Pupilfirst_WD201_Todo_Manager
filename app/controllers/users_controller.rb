@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  skip_before_action :ensure_user_logged_in
+
   def new
     render "users/new"
   end
@@ -17,12 +19,5 @@ class UsersController < ApplicationController
       password: params[:password],
     )
     redirect_to "/"
-  end
-
-  def login
-    email = params[:email]
-    password = params[:password]
-    user = User.find_by(email: email, password: password)
-    render plain: user.present?
   end
 end
