@@ -1,11 +1,6 @@
-# users_controller.rb
 class UsersController < ApplicationController
-  # for postman to work
-  skip_before_action :verify_authenticity_token
-
-  def index
-    response_text = "Hey, below are list of users:"
-    render plain: User.all.map { |user| user.to_pleasant_string }.join("\n")
+  def new
+    render "users/new"
   end
 
   def show
@@ -15,18 +10,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    name = params[:name]
-    email = params[:email]
-    password = params[:password]
-
-    new_user = User.create!(
-      name: name,
-      email: email,
-      password: password,
+    User.create!(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      password: params[:password],
     )
-
-    response_text = "Hey, #{name} we have created a user for you with email: #{email}"
-    render plain: response_text
+    redirect_to "/"
   end
 
   def login
