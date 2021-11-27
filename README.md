@@ -13,3 +13,11 @@
 - Install and verify Ruby, Rails, `pg` gem on your laptop
 
 - Clone the git repo and `rails server` to run code
+
+- Do not forgot to do db migrations
+
+## Deployment and Demo
+
+This application [Lives Here](https://wd-aicte-todo-manager.herokuapp.com/)
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
